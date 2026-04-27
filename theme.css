@@ -5406,9 +5406,9 @@ body:not(.pt-disable-callout-styling) {
 .metadata-property-key {
   align-items: center;
 }
-
+/* change from "font-normal" to "font-ui-medium". Fixes display errors in 2nd, 3rd, ... windows */
 .textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'], input.document-search-input, input.document-replace-input, input.prompt-input {
-    font-size: var(--font-normal); /* THIS FIXES THE ANNOYINGLY BIGGER KEY FONT */
+    font-size: var(--font-ui-medium); /* THIS FIXES THE ANNOYINGLY BIGGER KEY FONT */
 } 
 
 .metadata-property-icon {
