@@ -1786,8 +1786,11 @@ li[data-task="d"] > input:checked {
                 Callouts
 ────────────────────────────────────*/
 
+/* Bug fix of cursor jumping
+changed initital to content
+*/
 .markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
-    contain: initial !important;
+    contain: content;
 }
 
 .callout-title {
@@ -3911,7 +3914,7 @@ body.hider-frameless .workspace-split.mod-left-split >
 
 .markdown-source-view.mod-cm6
 .dataview.table-view-table thead.table-view-thead tr th {
-    font-size: var(--font-medium);
+    font-size: var(--font-ui-medium); /* changed to ui medium also because of large font in 2nd window */
     background: var(--background-secondary);
 }
 
@@ -5407,9 +5410,12 @@ body:not(.pt-disable-callout-styling) {
   align-items: center;
 }
 
-.textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'], input.document-search-input, input.document-replace-input, input.prompt-input {
-    font-size: var(--font-normal); /* THIS FIXES THE ANNOYINGLY BIGGER KEY FONT */
-} 
+/* try by macorama to help with the font 
+change to font-UI-MEDIUM, from font-normal
+*/
+ .textarea, input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'], input.document-search-input, input.document-replace-input, input.prompt-input {
+    font-size: var(--font-ui-medium);  
+}  /* THIS FIXES THE ANNOYINGLY BIGGER KEY FONT  */
 
 .metadata-property-icon {
   height: fit-content;
