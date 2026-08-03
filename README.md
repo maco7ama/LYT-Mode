@@ -1,6 +1,10 @@
 ![lyt-mode-graphic](lyt-mode-graphic-1.jpg)
 
-# LYT Mode
+# LYT Mode 1UP
+
+This is basically the original LYT Mode Theme, adjusted to fix broken css and other stuff.
+Especially with new Obsidian Versions and other plugins.
+~Jürgen
 
 LYT Mode is for "Linking Your Thinking".  
 It invokes sensemaking and lateral thinking.  
